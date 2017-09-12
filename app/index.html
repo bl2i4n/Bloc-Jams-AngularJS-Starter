@@ -10,11 +10,31 @@
     <body class="bg other-font">
         <ui-view></ui-view>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="./app/bootstrap-3.3.7-dist/css/bootstrap.min.css"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
+        <script src="https://cdn.rawgit.com/Luegg/angularjs-scroll-glue/master/src/scrollglue.js"></script>
+
+        <!-- AngularFire -->
+        <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+        <!-- FireBase -->
+        <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+
         <script src="scripts/app.js"></script>
         <script type="text/javascript"></script>
-
+        <script src="/scripts/services/userFactory.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDtxc2SWqGtSWlB_BHjehxM_sBAVSGwcrY",
+          authDomain: "punchline-7ae1d.firebaseapp.com",
+          databaseURL: "https://punchline-7ae1d.firebaseio.com",
+          projectId: "punchline-7ae1d",
+          storageBucket: "punchline-7ae1d.appspot.com",
+          messagingSenderId: "484655823760"
+        };
+        firebase.initializeApp(config);
+        </script>
     </body>
 </html>
