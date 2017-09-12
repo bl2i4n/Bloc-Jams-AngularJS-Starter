@@ -3,6 +3,12 @@
   color: green;
 }
 
+#imgur{
+  display: block;
+  margin: 0 auto;
+  border-bottom: 50px;
+}
+
 .banner{
   margin-top: 185px;
 }
@@ -21,10 +27,14 @@ img.center {
   border-bottom: 50px;
 }
 
-.main {
+.font {
   margin-top: 120px;
   padding: 40px;
   color: white;
+}
+
+.other-font{
+  color:white;
 }
 
 .main2 {
