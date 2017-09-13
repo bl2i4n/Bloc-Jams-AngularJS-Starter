@@ -18,5 +18,4 @@
   angular
         .module('punchline')
         .controller('userCtrl', ['$scope', 'userFactory', userCtrl]);
-
 })();

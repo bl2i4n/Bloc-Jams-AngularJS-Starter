@@ -28,6 +28,6 @@
 
 
   angular
-    .module('punchline', ['ui.router'])
+    .module('punchline', ['ui.router', 'firebase'])
     .config(config);
 })();
