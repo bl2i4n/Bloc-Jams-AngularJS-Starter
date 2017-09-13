@@ -17,5 +17,5 @@
 
   angular
         .module('punchline')
-        .controller('userCtrl', ['$scope', 'userFactory', userCtrl]);
+        .controller('userCtrl', ['$scope', 'userFactory', '$firebaseAuth', userCtrl]);
 })();

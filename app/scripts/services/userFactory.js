@@ -1,6 +1,6 @@
 (function(){
 
-  function userFactory(){
+  function userFactory($firebaseAuth){
 
     return $firebaseAuth();
   }
