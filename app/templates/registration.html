@@ -6,26 +6,29 @@
         <h2 class="logo">Punchline</h2>
         <img src="assets/main_logo.png" alt="smiley" class="center">
       </div>
+      <div class="text-center form-stuff" ng-controller="userCtrl">
+        <div id="other-font">
+          Email: <input type="text" ng-model="email" placeholder="Email" id="form-text">
+          Password: <input type="text" ng-model="password" placeholder="Password" id="form-text">
+        </div>
+
+        <br />
+
+        <button ng-click="createUser()">Sign Up</button>
+
+        <br />
+        <div id="other-font">
+          <p ng-if="message">Message: <strong>{{message}}</strong></p>
+          <p ng-if="error">Error: <strong>{{error}}</strong></p>
+        </div>
     </div>
-    <div class="text-center form-stuff" ng-controller="userCtrl">
-      Email: <input type="text" ng-model="email" placeholder="Email">
-      Password: <input type="text" ng-model="password" placeholder="Password">
 
-      <br />
-      <br />
-
-      <button ng-click="createUser()">Sign Up</button>
-
-      <br />
-
-      <p ng-if="message">Message: <strong>{{message}}</strong></p>
-      <p ng-if="error">Error: <strong>{{error}}</strong></p>
 
       <!-- <input id="txtEmail" type="email" placeholder="Email">
       <input id="txtPassword" type="password" placeholder="Password">
       <button id="btnLogin" class="btn btn-action text-center">Log in</button>
       <button id="btnSignUp" class="btn btn-secondary text-center">Sign up</button>
       <button id="btnLogout" class="btn btn-action hide text-center">Log out</button> -->
-    </div>
+    <!-- </div> -->
     <button ui-sref="user" class="btn-danger btn-lg btn-block text-center" type="button">NEXT</button>
   </div>
