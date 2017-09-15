@@ -1,12 +1,12 @@
 <div class="container" ng-controller="userCtrl">
-  <!-- <div class="content">
-  </div> -->
   <div class="row">
     <div class="col-6 text-center" ng-controller="userCtrl">
       <div ng-show="firebaseUser">
         <h2>Introducing...</h2>
-        <h2>{{ firebaseUser }}</h2>
-        <button ng-click="auth.$signOut()">Sign Out</button>
+        <h2>{{ firebaseUser.email }}</h2>
+        <!-- This will redirect back to the first page -->
+        <!-- need to write function for this -->
+        <!-- <button ng-click="auth.$signOut()">Sign Out</button> -->
       </div>
 
       <h3>Choose your avatar</h3>

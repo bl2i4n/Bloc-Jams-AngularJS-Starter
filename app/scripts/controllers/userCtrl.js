@@ -16,11 +16,14 @@
           $scope.error = error;
         });
 
-        //TODO: Is this even getting called?
-      $scope.auth.$onAuthStateChanged(function(firebaseUser) {
-        $scope.firebaseUser = firebaseUser;
-      });
     };
+
+        //TODO: Is this even getting called?
+      userFactory.$onAuthStateChanged(function(firebaseUser) {
+        $scope.firebaseUser = firebaseUser;
+        console.log(firebaseUser);
+
+      });
 
   }
 
