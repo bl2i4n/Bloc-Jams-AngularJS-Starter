@@ -9,12 +9,12 @@
         <!-- <button ng-click="auth.$signOut()">Sign Out</button> -->
       </div>
 
-      <h3>Choose your avatar</h3>
-      <input type="image" src="assets/avatar1.png" name="" class="" id="" />
-      <input type="image" src="assets/avatar2.png" name="" class="" id="" />
-      <input type="image" src="assets/avatar3.png" name="" class="" id="" />
-      <input type="image" src="assets/avatar4.png" name="" class="" id="" />
-      <input type="image" src="assets/avatar5.png" name="" class="" id="" />
+      <!-- <h3>Choose your avatar</h3>
+      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar1.png" name="" class="" id="" />
+      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar2.png" name="" class="" id="" />
+      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar3.png" name="" class="" id="" />
+      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar4.png" name="" class="" id="" />
+      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar5.png" name="" class="" id="" /> -->
 
       <div class="row">
         <div class="col">
@@ -24,12 +24,23 @@
       </div>
     </div>
       <div ng-controller="iconCtrl">
+        <h3>Choose your avatar</h3>
+        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar1.png" name="" class="" id="" />
+        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar2.png" name="" class="" id="" />
+        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar3.png" name="" class="" id="" />
+        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar4.png" name="" class="" id="" />
+        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar5.png" name="" class="" id="" />
 
+
+
+<!--TODO: need ng-submit="functionName()"  -->
+<!-- THEN MAKE THESE TABS WHICH MAKES THEM APPEAR AND DISAPPEAR FROM CODESCHOOL -->
+<!-- THIS IS POSSIBLY TO SAVE JOKES -->
         <!-- anything typed in here is magically saved to our Firebase database! -->
-        <input type="text" ng-model="data.text" id="form-text"/>
+        <!-- <input type="text" ng-model="data.text" id="form-text"/>
         <!-- all changes from our Firebase database magically appear here! -->
-        <h1>You said: {{ data.text }}</h1>
-        <a ui-sref="filters" class="btn btn-success btn-lg btn-block">Done</a>
+        <!-- <h1>You said: {{ data.text }}</h1> -->
+        <!-- <a ui-sref="filters" class="btn btn-success btn-lg btn-block">Done</a> -->
 
       </div>
   </div>
