@@ -5,6 +5,7 @@
       $scope.error = null;
 
       //retrieve auth state
+      //also gets current user?
       $scope.auth = userFactory;
 
       // Create a new user
