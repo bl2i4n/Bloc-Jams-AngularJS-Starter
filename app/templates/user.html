@@ -25,13 +25,13 @@
     </div>
       <div ng-controller="iconCtrl">
         <h3>Choose your avatar</h3>
-        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar1.png" name="" class="" id="" />
-        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar2.png" name="" class="" id="" />
-        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar3.png" name="" class="" id="" />
-        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar4.png" name="" class="" id="" />
-        <input ng-click="saveEntry()" ng-model="icon" type="image" src="assets/avatar5.png" name="" class="" id="" />
+        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar1.png" name="" class="" id="" />
+        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar2.png" name="" class="" id="" />
+        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar3.png" name="" class="" id="" />
+        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar4.png" name="" class="" id="" />
+        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar5.png" name="" class="" id="" />
 
-
+        {{icons}}
 
 <!--TODO: need ng-submit="functionName()"  -->
 <!-- THEN MAKE THESE TABS WHICH MAKES THEM APPEAR AND DISAPPEAR FROM CODESCHOOL -->
