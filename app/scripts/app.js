@@ -22,7 +22,12 @@
       .state('filters', {
         url: '/filters',
         templateUrl: '/templates/filters.html'
+      })
+      .state('bots', {
+        url: '/bot',
+        templateUrl: '/templates/bot.html'
       });
+
 
   }
 
