@@ -9,29 +9,26 @@
         <!-- <button ng-click="auth.$signOut()">Sign Out</button> -->
       </div>
 
-      <!-- <h3>Choose your avatar</h3>
-      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar1.png" name="" class="" id="" />
-      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar2.png" name="" class="" id="" />
-      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar3.png" name="" class="" id="" />
-      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar4.png" name="" class="" id="" />
-      <input ng-click="saveEntry()" ng-model="poll.name" type="image" src="assets/avatar5.png" name="" class="" id="" /> -->
+      <h3>Choose your avatar</h3>
+      <input ng-click="tab = 1" type="image" src="assets/avatar1.png" name="" class="" id="" />
+      <input ng-click="tab = 2" type="image" src="assets/avatar2.png" name="" class="" id="" />
+      <input ng-click="tab = 3" type="image" src="assets/avatar3.png" name="" class="" id="" />
+      <input ng-click="tab = 4" type="image" src="assets/avatar4.png" name="" class="" id="" />
+      <input ng-click="tab = 5" type="image" src="assets/avatar5.png" name="" class="" id="" />
 
       <div class="row">
         <div class="col">
+          <img src="assets/avatar1.png" name="" class="" id="" />
+          <img  src="assets/avatar2.png" name="" class="" id="" />
+          <img src="assets/avatar3.png" name="" class="" id="" />
+          <img src="assets/avatar4.png" name="" class="" id="" />
+          <img src="assets/avatar5.png" name="" class="" id="" />
           <h4>Display Name and Avatar</h4>
           <h4>Fly weight     +0 pts.</h4>
         </div>
       </div>
     </div>
-      <div ng-controller="iconCtrl">
-        <h3>Choose your avatar</h3>
-        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar1.png" name="" class="" id="" />
-        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar2.png" name="" class="" id="" />
-        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar3.png" name="" class="" id="" />
-        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar4.png" name="" class="" id="" />
-        <input ng-click="add()" ng-model="user.image" type="image" src="assets/avatar5.png" name="" class="" id="" />
-
-        {{icons}}
+      <!-- <div ng-controller="iconCtrl"> -->
 
 <!--TODO: need ng-submit="functionName()"  -->
 <!-- THEN MAKE THESE TABS WHICH MAKES THEM APPEAR AND DISAPPEAR FROM CODESCHOOL -->
@@ -42,6 +39,6 @@
         <!-- <h1>You said: {{ data.text }}</h1> -->
         <!-- <a ui-sref="filters" class="btn btn-success btn-lg btn-block">Done</a> -->
 
-      </div>
+      <!-- </div> -->
   </div>
 </div>
