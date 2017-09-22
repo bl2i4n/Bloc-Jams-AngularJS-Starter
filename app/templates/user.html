@@ -16,15 +16,24 @@
       <input ng-click="tab = 4" type="image" src="assets/avatar4.png" name="" class="" id="" />
       <input ng-click="tab = 5" type="image" src="assets/avatar5.png" name="" class="" id="" />
 
+      <br />
+
       <div class="row">
         <div class="col">
-          <img src="assets/avatar1.png" name="" class="" id="" />
-          <img  src="assets/avatar2.png" name="" class="" id="" />
-          <img src="assets/avatar3.png" name="" class="" id="" />
-          <img src="assets/avatar4.png" name="" class="" id="" />
-          <img src="assets/avatar5.png" name="" class="" id="" />
-          <h4>Display Name and Avatar</h4>
           <h4>Fly weight     +0 pts.</h4>
+          <img src="assets/avatar1.png" class="ng-hide" />
+          <img src="assets/avatar2.png" class="ng-hide" />
+          <img src="assets/avatar3.png" class="ng-hide"/>
+          <img src="assets/avatar4.png" class="ng-hide" />
+          <img src="assets/avatar5.png" class="ng-hide" />
+            <h4>{{ firebaseUser.email }}
+              <img src="assets/avatar1.png" ng-show="tab===1" class="ng-hide" />
+              <img src="assets/avatar2.png" ng-show="tab===2" class="ng-hide" />
+              <img src="assets/avatar3.png" ng-show="tab===3" class="ng-hide"/>
+              <img src="assets/avatar4.png" ng-show="tab===4" class="ng-hide" />
+              <img src="assets/avatar5.png" ng-show="tab===5" class="ng-hide" />
+            </h4>
+
         </div>
       </div>
     </div>
