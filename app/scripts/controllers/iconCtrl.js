@@ -1,3 +1,5 @@
+
+//we didn't use this yet
 (function(){
   function iconCtrl($scope, $firebaseArray) {
     var ref = firebase.database().ref().child('data')
