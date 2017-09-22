@@ -23,6 +23,10 @@
         url: '/filters',
         templateUrl: '/templates/filters.html'
       })
+      .state('matches',{
+        url: '/matches',
+        templateUrl: '/templates/matches.html'
+      })
       .state('bots', {
         url: '/bot',
         templateUrl: '/templates/bot.html'
