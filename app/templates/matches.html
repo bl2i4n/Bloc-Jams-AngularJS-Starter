@@ -1,4 +1,5 @@
-<h2 class="text-center">Find Contender</h2>
+
+<h2 class="text-center">Find A Contender</h2>
 
   <div ng-controller="userCtrl" id="other-font">
     <ul class="content2" id="other-font">
@@ -9,15 +10,24 @@
 
   </div>
 
-  <div align="center" style="margin-top:70px;">
+  <div align="center" style="margin-top:150px;">
     <div class="container">
-        <button id="pulser" class="pulse-button"></button>
+      <div class="second-circle">
+        <button id="pulser" class="pulse-button" onclick="timedRedirect()">Start Search</button>
+      </div
     </div>
   </div>
 
 <script type="text/javascript">
+
   $('button').click(function(){
     console.log('clicked');
     $('#pulser').addClass('pulse-button2')
   });
+
+  redirectTime = "5000";
+  redirectURL = "/bot";
+  function timedRedirect(){
+    setTimeout("location.href = redirectURL;" , redirectTime);
+  }
 </script>

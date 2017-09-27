@@ -89,11 +89,13 @@ img.center {
 }
 
 .pulse-button {
-
+  font-size: 20px;
+  top: 75px;
+  text-align: center;
   position: relative;
-  width: 100px;
-  height: 100px;
-  border: none;
+  width: 170px;
+  height: 170px;
+  border: white solid thick;
   box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
   border-radius: 50%;
   background-color: #e84c3d;
@@ -102,6 +104,31 @@ img.center {
   cursor: pointer;
   -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
 
+}
+
+.second-circle{
+  position: relative;
+  width: 330px;
+  height: 330px;
+  border: white solid thick;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: yellow;
+  background-size:cover;
+  background-repeat: no-repeat;
+
+}
+
+.third-circle{
+  position: relative;
+  width: 550px;
+  height: 550px;
+  border: white solid thick;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: #e84c3d;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .pulse-button2
