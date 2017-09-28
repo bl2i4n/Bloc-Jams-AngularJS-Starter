@@ -7,6 +7,6 @@
 
   angular
     .module('punchline')
-    .controller(botCtrl, [botCtrl]);
+    .controller('botCtrl', ['$scope', 'Bot', botCtrl]);
 
-});
+})();

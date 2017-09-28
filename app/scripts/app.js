@@ -29,6 +29,7 @@
       })
       .state('bots', {
         url: '/bot',
+        controller: 'botCtrl as bot',
         templateUrl: '/templates/bot.html'
       });
 
