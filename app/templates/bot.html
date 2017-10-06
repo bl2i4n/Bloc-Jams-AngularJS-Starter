@@ -1,9 +1,19 @@
 <main>
   <h2>TEST</h2>
-  <div ng-repeat="bot in botList">
+  <div ng-repeat="bot in botList" ng-click="setCurrentRoom(room)">
+    {{room.name}}
     <p id="other-font">
       These are the bots:
       {{bot.$value}}
     </p>
   </div>
 </main>
+
+<div>
+  TEST 2
+  <!-- <h3>{{currentRoom.name}}</h3> -->
+  <div ng-repeat="message in messageList">
+    <p>{{ message.$value }} @ {{ message.sentAt.$value }}</p>
+    <p>{{ message.$value }}</p>
+  </div>
+</div>

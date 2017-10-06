@@ -1,14 +1,17 @@
 (function(){
-
   function Message($firebaseArray){
-    var Message = {};
+    var Message = {}
     var ref = firebase.database().ref().child("messages");
+    var messages = $firebaseArray(ref);
 
-    return Message;
+    return {
+      all: messages
+    };
+
   }
 
   angular
-    .module('blocChat')
+    .module('punchline')
     .factory('Message', ['$firebaseArray', Message]);
 
 })();
